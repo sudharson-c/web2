@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShoppingApp>
+    <!-- Categories -->
+    <Categories>
+        <Category id="1">
+            <Name>Electronics</Name>
+            <Description>Devices and gadgets</Description>
+        </Category>
+        <Category id="2">
+            <Name>Fashion</Name>
+            <Description>Clothing and accessories</Description>
+        </Category>
+    </Categories>
+
+    <!-- Products -->
+    <Products>
+        <Product id="101" category="1">
+            <Name>Laptop</Name>
+            <Price currency="USD">799.99</Price>
+            <Description>High-performance laptop for professionals.</Description>
+            <Stock>10</Stock>
+        </Product>
+        <Product id="102" category="1">
+            <Name>Smartphone</Name>
+            <Price currency="USD">499.99</Price>
+            <Description>Latest smartphone with advanced features.</Description>
+            <Stock>25</Stock>
+        </Product>
+        <Product id="201" category="2">
+            <Name>Jacket</Name>
+            <Price currency="USD">99.99</Price>
+            <Description>Stylish winter jacket for men and women.</Description>
+            <Stock>50</Stock>
+        </Product>
+    </Products>
+
+    <!-- Orders -->
+    <Orders>
+        <Order id="5001">
+            <Customer>
+                <Name>John Doe</Name>
+                <Email>john.doe@example.com</Email>
+            </Customer>
+            <OrderDate>2024-11-21</OrderDate>
+            <Items>
+                <Item productId="101" quantity="1"/>
+                <Item productId="201" quantity="2"/>
+            </Items>
+            <TotalAmount currency="USD">999.97</TotalAmount>
+            <Status>Processing</Status>
+        </Order>
+    </Orders>
+</ShoppingApp>
